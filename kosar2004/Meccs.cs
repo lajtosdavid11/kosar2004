@@ -8,6 +8,8 @@
         public int IPont  { get; private set; }
         public string Hely  { get; private set; }
         public string Ido  { get; private set; }
+
+        
         
 
         public Meccs(string hazai, string idegen, int hpont, int ipont, string hely, string ido) 
@@ -20,6 +22,9 @@
             this.Ido = ido;
             
         }
-        
+        public string atalakit()
+        {
+            return Hazai + " - " + Idegen + " (" + HPont.ToString() + " - " + IPont.ToString() + ")";
+        }
     }
 }
